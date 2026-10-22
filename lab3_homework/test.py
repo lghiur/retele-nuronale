@@ -1,4 +1,4 @@
-from helpers import load_dataset, load_parameters, normalize_x, normalize_y, prepare_trainset
+from helpers import load_dataset, load_parameters, normalize_x, prepare_trainset
 from perceptron import perceptron
 import numpy as np
 

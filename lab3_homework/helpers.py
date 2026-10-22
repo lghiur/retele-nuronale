@@ -20,9 +20,9 @@ def load_parameters(path):
 
   return w, b
 
-def prepare_trainset(x_train, y_train):
+def prepare_trainset(x_train):
   n_features = len(x_train[0])
-  n_classes = int(y_train.max()) + 1
+  n_classes = 10
 
   return n_features, n_classes
 

@@ -54,7 +54,7 @@ def plot_loss_vs_time(loss_history, times):
 def main():
   x, y = load_dataset("trainset/train.npz")
   x_train, y_train, _, _ = split_dataset(x, y)
-  nr_features, nr_classes = prepare_trainset(x_train, y_train)
+  nr_features, nr_classes = prepare_trainset(x_train)
   get_params, set_params = make_params(nr_features, nr_classes)
   normalized_x = normalize_x(x_train)
   normalized_y = normalize_y(y_train, nr_classes)
